@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a href="/services" class="logo"
+        ><i class="fas fa-utensils"></i> IbrahimH.</a
+      >
+
+      <nav class="navbar">
+        <a href="/services">home</a>
+        <a href="/services/about">about</a>
+        <a href="/services/menu">menu</a>
+      </nav>
+
+      <a href="#" class="btn">book a table</a>
+    </header>
+    <div class="gap"></div>
+
+    <!-- header section ends -->
+
+    {% block content %} {% endblock %}
+
+    <section class="footer">
+      <div class="credit">copyright @ 2024 by <span>IbrahimH</span></div>
+    </section>
+
+    <script src="{%static 'js/script.js'%}"></script>
+  </body>
+</html>
